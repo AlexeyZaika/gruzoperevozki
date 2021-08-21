@@ -224,6 +224,22 @@ body {
   left: 0;
   width: 100%;
   background-color: #fff;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.header._scroll {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.header._scroll .header__container {
+  height: 80px;
+}
+
+.header._scroll .header__logo img {
+  height: 60px;
 }
 
 .header__container {
@@ -238,10 +254,16 @@ body {
           justify-content: space-between;
   padding: 10px 15px;
   height: 80px;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .header__logo img {
   height: 60px;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .header__content {
@@ -253,6 +275,8 @@ body {
   padding: 50px 15px 30px;
   background-color: #fff;
   overflow-y: auto;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -318,6 +342,7 @@ body {
 
 .header__social svg {
   height: 30px;
+  width: 30px;
   fill: #bbbcbb;
 }
 
@@ -638,7 +663,14 @@ body {
 }
 
 .slide-feedback {
+  padding: 10px;
+}
+
+.slide-feedback__wrap {
+  padding: 20px 20px 30px 20px;
   text-align: center;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
 }
 
 .slide-feedback__image {
@@ -808,6 +840,10 @@ body {
 
   .item-services__button .btn img {
     width: 22px;
+  }
+
+  .slide-feedback__wrap {
+    padding: 40px 50px 80px 50px;
   }
 }
 
@@ -987,6 +1023,8 @@ body {
             justify-content: flex-end;
     margin-right: -15px;
     padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 
   .header__list {
@@ -1090,6 +1128,7 @@ body {
 
   .header__social svg {
     height: 35px;
+    width: 35px;
   }
 
   .footer__logo img {
@@ -1206,7 +1245,7 @@ body {
   }
 
   .contacts__content {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 
   .item-contacts {
@@ -1238,10 +1277,10 @@ body {
   }
 
   .main__title {
-    font-size: 85px;
+    font-size: 75px;
   }
 
   .main__subtitle {
-    font-size: 85px;
+    font-size: 75px;
   }
 }

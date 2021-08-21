@@ -17,7 +17,13 @@ let slider_feedback = new Swiper('.feedback__slider', {
 		},
 		768: {
 			slidesPerView: 2,
-			spaceBetween: 0,
+			spaceBetween: 20,
+		},
+		992: {
+			spaceBetween: 40,
+		},
+		1280: {
+			spaceBetween: 100,
 		},
 	},
 });
@@ -95,6 +101,19 @@ function offset(el) {
 		scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
 		scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 	return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+}
+window.addEventListener('scroll', scroll_scroll);
+//ScrollOnScroll
+function scroll_scroll() {
+	let src_value = pageYOffset;
+	let header = document.querySelector('header.header');
+	if (header !== null) {
+		if (src_value > 10) {
+			header.classList.add('_scroll');
+		} else {
+			header.classList.remove('_scroll');
+		}
+	}
 }
 //lazy-load
 "use strict"
