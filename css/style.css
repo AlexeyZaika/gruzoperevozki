@@ -275,20 +275,10 @@ body {
   padding: 50px 15px 30px;
   background-color: #fff;
   overflow-y: auto;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
-}
-
-.header__content::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 10px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .header__content._active {
@@ -1032,10 +1022,7 @@ body {
             justify-content: flex-end;
     margin-right: -15px;
     padding: 0;
-  }
-
-  .header__content::after {
-    display: none;
+    border-bottom: none;
   }
 
   .header__list {
